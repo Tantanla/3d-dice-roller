@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3d-dice-roller</title>
+	<meta name="description" content="Demo for the tutorial on how to code a dice roller with Three.js and cannon-es" />
+	<meta name="keywords" content="3d dice, three.js, cannon-es, webgl, rolling dice" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+</head>
+
+<body>
+	<main>
+		<canvas id="canvas"></canvas>
+		<div class="ui-big">
+		<div class="ui-controls">
+			<div class="score">Score点数: <span id="score-result"></span></div>
+			<p>按住鼠标移动可控制观察视角</p>
+			<button id="roll-btn">
+				<p>throw the dice</p>
+				<p>点击丢出骰子</p>
+			</button>
+			<div class="dropdown">
+				<a href="#" class="dropbtn">
+					<p>number of dice</p>
+					<p>选择丢出骰子数量</p>
+					<div class="dropdown-content">
+						<button id="number1">1</button>
+						<button id="number2">2</button>
+						<button id="number3">3</button>
+						<button id="number4">4</button>
+						<button id="number5">5</button>
+						<button id="number6">6</button>
+					</div>
+				</a>
+			</div>
+			</div>
+		</div>
+
+
+	</main>
+
+	<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+	<script type="importmap">
+		  {
+			"imports": {
+			  "three": "https://unpkg.com/three@0.138.0/build/three.module.js",
+			  "three/addons/": "https://unpkg.com/three@0.138.0/examples/jsm/"
+			}
+		  }
+		</script>
+	<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+	<script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
