@@ -2,7 +2,7 @@ import * as CANNON from 'https://cdn.skypack.dev/cannon-es';
 
 import * as THREE from 'three';
 import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js';
-import { GUI } from '../node_modules/three/examples/jsm/libs/lil-gui.module.min.js'
+// import { GUI } from '../node_modules/three/examples/jsm/libs/lil-gui.module.min.js'
 import {OrbitControls} from '../node_modules/three/examples/jsm/controls/OrbitControls.js'
 
 const canvasEl = document.querySelector('#canvas');
